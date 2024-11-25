@@ -1,0 +1,14 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "dev": "node server.js",
+    "build": "babel . --out-dir dist --extensions '.js' --ignore 'node_modules/**'"
+  },
+  "dependencies": {
+    "@turbo-test/classes": "*",
+    "@turbo-test/utils": "*"
+  },
+  "license": "MIT"
+}

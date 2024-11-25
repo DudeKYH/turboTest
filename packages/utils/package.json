@@ -1,0 +1,13 @@
+{
+  "name": "@turbo-test/utils",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "files": [
+    "**/*"
+  ],
+  "scripts": {
+    "build": "babel . --out-dir dist --extensions '.js' --ignore 'node_modules/**'"
+  },
+  "license": "MIT"
+}
