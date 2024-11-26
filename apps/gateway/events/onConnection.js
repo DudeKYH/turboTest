@@ -1,9 +1,12 @@
+import { getNumber } from "@turbo-test/utils";
 import { onData } from "./onData.js";
 import { onEnd } from "./onEnd.js";
 import { onError } from "./onError.js";
-import { getNumber } from "@turbo-test/utils";
-export const onConnection = socket => {
-  console.log(`[GameServer] Client connected from: ${socket.remoteAddress}:${socket.remotePort}`, `socket.id: ${socket.id}`);
+export const onConnection = (socket) => {
+  console.log(
+    `[GatewayServer] Client connected from: ${socket.remoteAddress}:${socket.remotePort}`,
+    `socket.id: ${socket.id}`
+  );
   console.log(`getNumber : ${getNumber()}`);
   socket.on("data", onData(socket));
   socket.on("end", onEnd(socket));
