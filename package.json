@@ -5,9 +5,8 @@
   "license": "MIT",
   "type": "module",
   "dependencies": {
-    "@babel/cli": "^7.25.9",
-    "@babel/core": "^7.26.0",
-    "@babel/preset-env": "^7.26.0",
+    "esbuild": "^0.24.0",
+    "glob": "^11.0.0",
     "turbo": "^2.3.1"
   },
   "private": true,

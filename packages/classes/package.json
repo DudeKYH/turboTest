@@ -1,13 +1,13 @@
 {
   "name": "@turbo-test/classes",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "type": "module",
   "files": [
     "**/*"
   ],
   "scripts": {
-    "build": "babel . --out-dir dist --ignore 'dist/**,node_module/**'"
+    "build": "node esbuild.config.js"
   },
   "license": "MIT"
 }

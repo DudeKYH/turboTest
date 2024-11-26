@@ -4,7 +4,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node dist/server.js",
-    "build": "babel src --out-dir dist"
+    "build": "node esbuild.config.js"
   },
   "dependencies": {
     "@turbo-test/classes": "*",
