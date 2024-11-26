@@ -1,5 +1,5 @@
 {
-  "name": "lobby",
+  "name": "gateway",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
@@ -10,6 +10,6 @@
     "@turbo-test/classes": "*",
     "@turbo-test/utils": "*"
   },
-  "license": "MIT",
-  "type": "module"
+  "type": "module",
+  "license": "MIT"
 }

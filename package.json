@@ -1,25 +1,20 @@
 {
-  "name": "turbo-test2",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "type": "module",
-  "dependencies": {
-    "@babel/cli": "^7.25.9",
-    "@babel/core": "^7.26.0",
-    "@babel/preset-env": "^7.26.0",
-    "@babel/preset-react": "^7.25.9",
-    "@babel/preset-typescript": "^7.26.0",
-    "turbo": "^2.3.1"
-  },
+  "name": "turboTest2",
   "private": true,
-  "scripts": {
-    "dev": "turbo run dev",
-    "build": "turbo run build"
-  },
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
-  "packageManager": "yarn@1.22.22"
+  "devDependencies": {
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.22.10",
+    "turbo": "^1.10.7"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "start": "turbo run start"
+  },
+  "type": "module",
+  "license": "MIT"
 }

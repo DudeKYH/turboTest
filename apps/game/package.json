@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "dev": "node server.js",
-    "build": "babel . --out-dir dist --extensions '.js' --ignore 'node_modules/**'"
+    "build": "babel . --out-dir dist",
+    "start": "node dist/server.js"
   },
   "dependencies": {
     "@turbo-test/classes": "*",
     "@turbo-test/utils": "*"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "type": "module"
 }
