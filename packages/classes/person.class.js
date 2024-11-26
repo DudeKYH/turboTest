@@ -1,4 +1,4 @@
-export class Person {
+class Person {
   constructor(age, height) {
     this.age = age;
     this.height = height;
@@ -7,6 +7,5 @@ export class Person {
   grow() {
     this.age += 1;
     this.height += 1;
-    console.log("age: ", this.age, "height: ", this.height);
   }
 }

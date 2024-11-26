@@ -1,3 +1,3 @@
-export const getNumber = () => {
+const getNumber = () => {
   return 1;
 };

@@ -7,16 +7,7 @@
     "**/*"
   ],
   "scripts": {
-    "build": "babel . --out-dir dist --extensions '.js'"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.22.10",
-    "@babel/preset-env": "^7.22.10"
-  },
-  "babel": {
-    "presets": [
-      "@babel/preset-env"
-    ]
+    "build": "babel . --out-dir dist --extensions '.js' --ignore 'node_modules/**'"
   },
   "license": "MIT"
 }

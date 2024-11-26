@@ -1,15 +1,20 @@
-import net from "net";
-import { onConnection } from "./events/onConnection.js";
 import { Person } from "@turbo-test/classes";
+import net from "net";
 
-const gameServer = net.createServer(onConnection);
+const gameServer = net.createServer((socket) => {
+  console.log(
+    `[gameServer] Client connected from: ${socket.remoteAddress}:${socket.remotePort}`
+  );
 
-const PORT = 5555;
-const HOST = "127.0.0.1";
+  const player = new Person(25, 180);
+  player.grow();
+  console.log(player);
 
-gameServer.listen(5555, "127.0.0.1", () => {
-  console.log(`[GameServer] ${HOST}:${PORT} listening`);
+  socket.on("data", (socket) => async (data) => {});
+  socket.on("end", (socket) => async (data) => {});
+  socket.on("error", (socket) => async (err) => {});
+});
 
-  const person = new Person(25, 180);
-  person.grow();
+gameServer.listen(6666, () => {
+  console.log("lobby Server Listening");
 });
