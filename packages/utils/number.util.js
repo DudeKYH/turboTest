@@ -1,3 +1,3 @@
 export const getNumber = () => {
-  return 1;
+  return 2;
 };
