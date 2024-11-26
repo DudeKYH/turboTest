@@ -1,14 +1,15 @@
 {
-  "name": "lobby",
+  "name": "gateway",
   "version": "1.0.0",
   "main": "server.js",
   "scripts": {
-    "dev": "node server.js",
-    "build": "babel . --out-dir dist --extensions '.js' --ignore 'node_modules/**'"
+    "start": "node dist/server.js",
+    "build": "babel . --out-dir dist"
   },
   "dependencies": {
     "@turbo-test/classes": "*",
     "@turbo-test/utils": "*"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "type": "module"
 }

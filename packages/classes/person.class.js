@@ -1,4 +1,4 @@
-class Person {
+export class Person {
   constructor(age, height) {
     this.age = age;
     this.height = height;
